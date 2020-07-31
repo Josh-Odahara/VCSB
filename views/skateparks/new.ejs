@@ -1,0 +1,30 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+	<h1 style="text-align: center;">Create a new Skatepark</h1>
+	<div class="row-12" style="width: 30%; margin: 25px auto;">
+	<form action="/skateparks" method="POST">
+		<div class="form-group">
+			<input class="form-control" type="text" name="name" placeholder="Skatepark Name">
+		</div>
+		
+		<div class="form-group">
+		<input class="form-control" type="text" name="image" placeholder="IMG URL">
+		</div>	
+		
+		<div class="form-group">
+		<textarea class="form-control" id="exampleFormControlTextarea1" name="description" rows="2" placeholder="add description here"></textarea>
+		</div>	
+		
+		<div class="form-group">	
+		<button class="btn btn-lg btn-primary btn-block">Submit!</button>
+		</div>
+		
+		<div class="form-group">	
+		<button class="btn btn-lg btn-primary btn-block"><a class="button-back"href="/skateparks">View All Skateparks</a></button>
+		</div>
+	</form>
+	</div>
+</div>
+
+<%- include("../partials/footer") %>

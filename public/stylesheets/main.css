@@ -1,0 +1,36 @@
+body{
+	background-image: url(https://robbreportedit.files.wordpress.com/2019/05/sbsailingcenter_sbinnview_photobyblakebronstad.jpg.jpg?w=1000);
+	-webkit-background-size: cover;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.button-back{
+	color: white;
+}
+
+.img-thumbnail img{
+	width: 100%;
+	padding: 0;
+}
+
+.img-thumbnail{
+	padding: 0;
+}
+
+.caption-full{
+	padding: 9px;
+}
+
+#delete-post{
+	display: inline;
+}
+
+.delete-comment{
+	display: inline;
+}
+
+#error-message{
+	padding-top: 15px;
+}
+

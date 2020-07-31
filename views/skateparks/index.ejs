@@ -1,0 +1,33 @@
+<%- include("../partials/header") %>
+
+<div class="container pt-4">
+	
+
+	<header class="jumbotron">
+	<div class="container">
+		<h1>Welcome to VCSB</h1>
+		<p>This is a mockup of <a href="http://socalskateparks.squarespace.com/ventura-county-skatepark-photos">SoCal Skateparks</a>. You can add and comment on your favorite skatparks, but you have to sign up first! You can always check out all the other skateparks that are on our website and see what other people are saying about them!</p>
+		<p>
+			<a class="btn btn-primary btn-lrg"href="/skateparks/new">Add new skatepark!</a>
+		</p>
+	</div>	
+	</header>
+
+	<div class="row text-center pb-5" style="display:flex; flex-wrap:wrap;">	
+		<% skateparks.forEach(function(skatepark){ %>
+			<div class="col-md-3 col-sm-6">
+				<div class="img-thumbnail">
+					<img class="img-thumbnail" src="<%= skatepark.image %>">
+					<div class="caption">
+						<h4> <%= skatepark.name %></h4>
+					</div>
+					<p>
+						<a href="/skateparks/<%= skatepark._id %>" class="btn btn-primary">More Info</a>
+					</p>
+				</div>
+			</div> 
+		<% }); %>
+	</div>
+</div>
+
+<%- include("../partials/footer") %>
